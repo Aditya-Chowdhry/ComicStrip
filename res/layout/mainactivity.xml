@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context="${relativePackage}.${activityClass}"
+    tools:ignore="UnusedAttribute" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#009688"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/comic_strip"
+        android:textColor="#FFFFFF"
+        android:textSize="55sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="10"
+        android:text="Make your comic in three simple steps:\n\n1.Choose one of the given templates\n2.Fill up the blanks from camera or gallery\n3.Complete and share!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/comic_pic"
+        android:scaleType="fitCenter"
+        android:src="@drawable/comic" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="#009688"
+        android:onClick="startButton"
+        android:text="@string/start_now_"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+         android:layout_gravity="center"
+        android:textSize="20sp" >
+
+    </Button>
+
+</LinearLayout>
